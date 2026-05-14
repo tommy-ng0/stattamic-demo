@@ -7,7 +7,7 @@ set -ex
 cp .env.example .env
 composer install --no-interaction -vvv --no-dev --prefer-dist --optimize-autoloader
 npm ci --cache .npm --prefer-offline
-npm run dev
+npm run build:dev
 
 php artisan key:generate
 
